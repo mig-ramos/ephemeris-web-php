@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agendamento de especialistas online">
+    <link rel="icon" href="../imgs/favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Login</title>
+</head>
+<header>
+    <nav>
+        <div class="w3-bar w3-green ">
+            <a href="#" class="w3-bar-item w3-button">Ephemeris</a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-button w3-hide-small">Administrador <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-hide-small">
+                    <a href="#" class="w3-bar-item w3-button w3-hide-small">Especialidades</a>
+                    <a href="#" class="w3-bar-item w3-button w3-hide-small">------------------------</a>
+                    <a href="#" class="w3-bar-item w3-button w3-hide-small">Cadastro de Usuários</a>
+                    <a href="lista.html" class="w3-bar-item w3-button w3-hide-small">Lista de Usuários</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-button">Medico <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button">Dados Cadastrais</a>
+                    <a href="usuario/editar_senha.html" class="w3-bar-item w3-button">Editar Senha</a>
+                    <a href="#" class="w3-bar-item w3-button">-------------------------</a>
+                    <a href="#" class="w3-bar-item w3-button">Consultas Agendadas</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-button">Paciente <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="paciente/cadastro.html" class="w3-bar-item w3-buttone">Cadastrar Dados</a>
+                    <a href="usuario/editar_senha.html" class="w3-bar-item w3-button">Editar Senha</a>
+                    <a href="#" class="w3-bar-item w3-button">---------------------------</a>
+                    <a href="#" class="w3-bar-item w3-button">Agendar Consultas</a>
+                    <a href="#" class="w3-bar-item w3-button">Histórico de Consultas</a>
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                onclick="myFunction()">&#9776;</a>
+            <a href="cadastro.html" class="w3-bar-item w3-button w3-green w3-right w3-hide-small">Cadastrar-se</a>
+            <a href="login.html" class="w3-bar-item w3-button w3-green w3-right w3-hide-small">Login</a>
+        </div>
+
+        <div id="demo" class="w3-bar-block w3-green w3-hide w3-hide-large w3-hide-medium">
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Administrador <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button">Especialidades</a>
+                    <a href="#" class="w3-bar-item w3-button">------------------------</a>
+                    <a href="#" class="w3-bar-item w3-button">Cadastro de Usuários</a>
+                    <a href="lista.html" class="w3-bar-item w3-button">Lista de Usuários</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Medico <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button">Dados Cadastrais</a>
+                    <a href="usuario/editar_senha.html" class="w3-bar-item w3-button">Editar Senha</a>
+                    <a href="#" class="w3-bar-item w3-button">-------------------------</a>
+                    <a href="#" class="w3-bar-item w3-button">Consultas Agendadas</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Paciente <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="paciente/cadastro.html" class="w3-bar-item w3-buttone">Cadastrar Dados</a>
+                    <a href="usuario/editar_senha.html" class="w3-bar-item w3-button">Editar Senha</a>
+                    <a href="#" class="w3-bar-item w3-button">---------------------------</a>
+                    <a href="#" class="w3-bar-item w3-button">Agendar Consultas</a>
+                    <a href="#" class="w3-bar-item w3-button">Histórico de Consultas</a>
+                </div>
+            </div>
+            <a href="cadastro.html" class="w3-bar-item w3-button w3-green w3-right">Cadastrar-se</a>
+            <a href="login.html" class="w3-bar-item w3-button w3-green w3-right">Login</a>
+        </div>
+    </nav>
+    <div class=" w3-container w3-margin-left w3-margin-right w3-center">
+        <h1>Agenda de Especialistas Online</h1>
+    </div>
+    </header>
+
+<main>
+    <div class="w3-center">
+        <a href="../home.html"><img src="../imgs/spring-security.png" class="w3-circle w3-center" alt="Alps"></a>
+    </div>
+    <h2 class="w3-center">Consultas Agendadas</h2>
+    <div class="w3-container w3-responsive">
+        <table class="w3-table-all">
+            <tr class="w3-green">
+                <th>#</th>
+                <th>Paciente</th>
+                <th>Data Consulta</th>
+                <th>Especialidade</th>
+                <th>Editar</th>
+                <th>Excluir</th>
+            </tr>
+        </table>
+    </div>
+    
+   
+
+</main>
+<footer>
+
+</footer>
+
+<body>
+
+</body>
+
+</html>
